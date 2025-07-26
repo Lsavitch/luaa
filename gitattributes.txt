@@ -1,0 +1,209 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clove e Reyna 💜🦋</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #1e1e2f, #0d0d1a);
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .scene {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .clove, .reyna {
+      position: absolute;
+      bottom: 100px;
+      width: 150px;
+      height: 300px;
+      background-size: cover;
+    }
+
+    .clove {
+      left: 10%;
+      background-image: url('https://static.valorant-api.com/agents/7f37e21f-2c4b-a9f4-1962-8c62b43e1c29/fullportrait.png');
+    }
+
+    .reyna {
+      right: 10%;
+      background-image: url('https://static.valorant-api.com/agents/2a9aee25-4222-33cc-3dc0-0cb8fbe51cc7/fullportrait.png');
+      animation: hug 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes hug {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-20px); }
+    }
+
+    .butterfly {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Emoji_u1f98b.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: fly 5s linear infinite;
+    }
+
+    @keyframes fly {
+      0% {
+        transform: translate(0, 0) scale(0.8) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(600px, -400px) scale(1.2) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .dialogue {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 1.5rem;
+      text-shadow: 0 0 5px #aa00ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="scene">
+    <div class="clove"></div>
+    <div class="reyna"></div>
+
+    <!-- Borboletinhas -->
+    <div class="butterfly" style="top: 60%; left: 20%; animation-delay: 0s;"></div>
+    <div class="butterfly" style="top: 62%; left: 22%; animation-delay: 0.5s;"></div>
+    <div class="butterfly" style="top: 64%; left: 24%; animation-delay: 1s;"></div>
+    <div class="butterfly" style="top: 66%; left: 26%; animation-delay: 1.5s;"></div>
+
+    <div class="dialogue">Reyna: “Você é fofa quando tenta me assustar, amor.” 😏💜</div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clove e Reyna 💜🦋💋</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at center, #1e1e2f, #0d0d1a);
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .scene {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .clove, .reyna {
+      position: absolute;
+      bottom: 100px;
+      width: 150px;
+      height: 300px;
+      background-size: cover;
+      transition: all 2s ease-in-out;
+    }
+
+    .clove {
+      left: 10%;
+      background-image: url('https://static.valorant-api.com/agents/7f37e21f-2c4b-a9f4-1962-8c62b43e1c29/fullportrait.png');
+    }
+
+    .reyna {
+      right: 10%;
+      background-image: url('https://static.valorant-api.com/agents/2a9aee25-4222-33cc-3dc0-0cb8fbe51cc7/fullportrait.png');
+    }
+
+    /* Abraço animado */
+    .hugging .clove {
+      transform: translateX(600px);
+    }
+
+    .hugging .reyna {
+      transform: translateX(-600px);
+    }
+
+    .butterfly {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Emoji_u1f98b.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: fly 5s linear infinite;
+    }
+
+    @keyframes fly {
+      0% {
+        transform: translate(0, 0) scale(0.8) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(600px, -400px) scale(1.2) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .dialogue {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 1.5rem;
+      text-shadow: 0 0 5px #aa00ff;
+    }
+
+    .kiss {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      opacity: 0;
+      animation: kissPop 2s ease-in-out forwards;
+      animation-delay: 3s;
+      z-index: 10;
+    }
+
+    @keyframes kissPop {
+      0% { transform: translate(-50%, -50%) scale(0.5); opacity: 0; }
+      50% { transform: translate(-50%, -50%) scale(1.5); opacity: 1; }
+      100% { transform: translate(-50%, -50%) scale(1); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="scene hugging">
+    <div class="clove"></div>
+    <div class="reyna"></div>
+
+    <!-- Borboletinhas -->
+    <div class="butterfly" style="top: 60%; left: 20%; animation-delay: 0s;"></div>
+    <div class="butterfly" style="top: 62%; left: 22%; animation-delay: 0.5s;"></div>
+    <div class="butterfly" style="top: 64%; left: 24%; animation-delay: 1s;"></div>
+    <div class="butterfly" style="top: 66%; left: 26%; animation-delay: 1.5s;"></div>
+
+    <!-- Selinho animado -->
+    <div class="kiss">💋</div>
+
+    <div class="dialogue">Reyna: “Você é toda emo e ainda me faz sorrir assim…” 💜🦋</div>
+  </div>
+</body>
+</html>
